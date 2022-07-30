@@ -1,0 +1,43 @@
+.movie-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 1rem;
+  padding: 0;
+
+  ul,
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .list-item {
+    width: 32%;
+  }
+
+  .link {
+    text-decoration: none;
+    opacity: 1;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.733);
+  }
+}
+
+@media (max-width: 860px) {
+  .movie-list {
+    .list-item {
+      width: 45%;
+    }
+  }
+}
+@media (max-width: 620px) {
+  .movie-list {
+    flex-direction: column;
+  }
+  .list-item {
+    width: unset;
+  }
+}
